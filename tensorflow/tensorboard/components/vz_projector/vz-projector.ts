@@ -134,6 +134,7 @@ export class Projector extends ProjectorPolymer implements
     this.scopeSubtree(this.$$('#notification-dialog'), true);
     this.setupUIControls();
     this.initializeDataProvider();
+    (<any>window).tensorboard_projector = this;
   }
 
   setSelectedLabelOption(labelOption: string) {
